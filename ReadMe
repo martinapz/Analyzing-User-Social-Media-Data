@@ -1,3 +1,25 @@
+Project overview: For this project we used check in data from Gowalla, a social media networking website. Gowalla kept track 
+of every time a user logged into a social media platform and recorded the location for each login for each user. We decided to 
+do a graph implementation of this data set because of the increasing use of social media in our world today. We found it fascinating 
+how much information and data we could use and analyze from a user simply logging into a social networking platform. 
+The three main components of this project were: 
+
+1. Breadth First Search (BFS Traversal)
+Our breadth first search algorithm was not used alone to create a certain output based on our dataset but was still
+proved useful in going through every node in our data if necessary. Similar to all our methods, BFS was thoroughly
+tested using a multitude of edge cases and different data sets.  
+
+2. Using Shortest Path Algorithm to calculate the shortest path from two user locations. 
+We used our shortest path algorithm, which takes in a graph, a start location, and an end location, and spits 
+out the shortest path that could be traveled based on when and where users were on their social media. 
+
+3. Using the Floyd Warshall algorithm and betweenness centrality to find the point most traveled through 
+    by going from each node to another on the shortest possible paths. 
+Using Floyd Warshall’s algorithm along with the betweenness centrality algorithm, we found that the most traveled
+through point in our large data set was the location with latitude 37, longitude –122.
+
+Structure: 
+
 Our dataset can be downloaded from this link here: http://snap.stanford.edu/data/loc-Gowalla.html 
 
 Our graph structure for our data can be found in Graph.h and Graph.cpp. We use a Node struct and an 
