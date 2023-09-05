@@ -1,4 +1,5 @@
-Project overview: For this project we used check in data from Gowalla, a social media networking website. Gowalla kept track 
+#Project overview: 
+For this project we used check in data from Gowalla, a social media networking website. Gowalla kept track 
 of every time a user logged into a social media platform and recorded the location for each login for each user. We decided to 
 do a graph implementation of this data set because of the increasing use of social media in our world today. We found it fascinating 
 how much information and data we could use and analyze from a user simply logging into a social networking platform. 
@@ -18,7 +19,7 @@ out the shortest path that could be traveled based on when and where users were 
 Using Floyd Warshall’s algorithm along with the betweenness centrality algorithm, we found that the most traveled
 through point in our large data set was the location with latitude 37, longitude –122.
 
-Structure: 
+#Structure: 
 
 Our dataset can be downloaded from this link here: http://snap.stanford.edu/data/loc-Gowalla.html 
 
