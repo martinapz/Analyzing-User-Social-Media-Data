@@ -1,0 +1,34 @@
+In the beginning of our project, we discussed a multitude of project goals.
+Some stayed steady, others we changed along the way.
+After lots of discussion and hard work, we ended up with three project goals that we worked on and completed.  
+
+
+1. Using Shortest Path Algorithm to calculate the shortest path from NYC and Stanta Cruz. 
+
+We used our shortest path algorithm, which takes in a graph, a start location, and an end location, and spits 
+out the shortest path that could be traveled based on when and where users were on their social media.
+This method was thoroughly tested with three separate data sets. So, after running on our large set, we discovered 
+that the shortest distance was 4139 km. This distance is relatively close to the driving distance between the two locations,
+which is approximately 4700 km, which in theory will be longer because driving rarely ever takes you in a straight line,
+especially when it comes to driving such a far distance.  
+
+ 
+2. Using the Floyd Warshall algorithm and betweenness centrality to find the point most traveled through 
+    by going from each node to another on the shortest possible paths. 
+
+Using Floyd Warshall’s algorithm along with the betweenness centrality algorithm, we found that the most traveled
+through point in our large data set was the location with latitude 37, longitude –122. This method was claimed to be
+successful due to our large variety of handwritten tests on multiple different data sets. 
+
+
+3. Breadth First Search 
+
+Our breadth first search algorithm was not used alone to create a certain output based on our dataset but was still
+proved useful in going through every node in our data if necessary. Similar to all our methods, BFS was thoroughly
+tested using a multitude of edge cases and different data sets.  
+
+ 
+Overall, when running our main function, one will see the printed-out adjacency list, showing all the various
+locations users were at, as well as the locations they traveled to next from such point (their adjacent locations).
+Then, one would see the shortest path algorithm ran, as well as the result from such. Lastly, our Floyd Warshall 
+and betweenness centrality method will run and produce the expected output. 

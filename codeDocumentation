@@ -1,0 +1,28 @@
+Week 1 (Nov 8 - Nov 14)
+- This week we worked on creating the graph.cpp/.h classes which will format the data being
+  inputed into the correct format.
+
+Week 2 (Nov 15 - Nov 21)
+- This week we worked on the readFile method which takes in our data, then reads it in with 
+  the graph class we created in week 1.
+
+Week 3 (Nov 22 - Nov 28)
+- This week we finished implementing the shorestPath method using Dijkstra's algorithm. We 
+  also implemented the test cases for helper functions of the method. We also added some
+  more functionalities to graph.cpp in order to have indecies of Nodes to help us keep 
+  track of the Nodes.
+
+Week 4 (Nov 29 - Dec 5)
+- This week we implemented the BFS algorithm. We also continued testing our shortest 
+  path algorithm and helper functions in the algorithms.cpp class. On the 4th, we also met
+  with our TA to go over what we have already implemented and next steps for our project.
+
+Week 5 (Dec 6 - Dec 12)
+- This week we implemented the Floyd Warshall and Betweenness Centrality algorithm.
+  We worked on test cases for both using differently sized test files including a new test
+  file that has 10+ nodes. We added some more tests for our previously defined methods using
+  the bigger test file.
+- We updated the ReadMe file, and printed the results of our algorithms in the main function,
+  reading in our largest data set. 
+- We created our presentation with our final findings and implementation details. We have also 
+  created our presentation video using powerwpoint slide. 

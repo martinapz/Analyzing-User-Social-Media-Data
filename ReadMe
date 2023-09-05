@@ -1,0 +1,35 @@
+Our dataset can be downloaded from this link here: http://snap.stanford.edu/data/loc-Gowalla.html 
+
+Our graph structure for our data can be found in Graph.h and Graph.cpp. We use a Node struct and an 
+Edge struct to structure our data. The Node struct represents each location in the data set, and the 
+the edge struct is an edge that is created between two points when a person has travelled between these 
+two points. The edge struct contains the two points it connects as well as the distance between the two 
+points. Additionally, we have an adjacecy list that that maps each node to a vector that holds all of its 
+adjacency nodes.
+ 
+How we read in the file and parse through our data can be found in readFile.h and readFile.cpp. All of our 
+methods including project code algorithms can be found in Algorithms.h and Algorithms.cpp. 
+
+We test all the methods we have created in tests.cpp. We ran our tests using 4 testing files: testSmall.txt,
+testMedium.txt, testLarge.txt, and testMultiplePaths.txt. The test files include:
+     - Tests for the adjacencyList on small and large data sets.
+     - Test BFS: test correct traversal on small, medium, and large test files.
+     - Test getDistance() helper function returns corect distance.
+     - Test shortest path: from one location to itself is zero, test from one edge away, test from two edges away,
+       test when given multiple path options, the shortest path was returned. All were tested with small and large
+       data sets. 
+     - Test Floyd Warshall and Betweeness Centrality on small, medium and large data sets. 
+
+The tests can be ran using the following commands:
+     1) making the test file (command: make test)
+     2) running test cases (command: ./test)
+
+The main is run in a similar way:
+    1) making the main (command: make main)
+    2) running test cases (command: ./main)
+    
+The dataset being used can be altered by changing what is being read into line 20 of main.cpp. For example, if you
+want to run "gowalla_data.txt" line 20 would look like such:
+    Graph g = f.read("gowalla_data copy.txt");
+
+All the results of tests.cpp and main.cpp will be shown in the terminal after running.
